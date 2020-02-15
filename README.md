@@ -15,22 +15,22 @@ very simple !
 
 |                |GET Method                          |Post Method              | Not Found          |
 |----------------|-------------------------------|-----------------------------|-------|
-|Static Methods |`App::get()`            |`App::post`             | `App::found()`
+|Static Methods |`ObRouter::get()`            |`ObRouter::post`             | `ObRouter::found()`
 
 ## Example
 
     <?php 
 	    inclue "oceanbee_router.php" ;
 		
-		App::get('user/:id/edit',function($params){
+		ObRouter::get('user/:id/edit',function($params){
 			echo $params->id ;
 		});
 		
-		App::post('/update/user',function(){
+		ObRouter::post('/update/user',function(){
 			//to do
 		});
 		
-		if(App::found() == false){
+		if(ObRouter::found() == false){
 			echo '404 not found' ;
 		}
 
