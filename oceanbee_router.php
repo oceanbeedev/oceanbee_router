@@ -6,7 +6,7 @@
      * @author hadi hosseini
      * @link http://ocean-bee.com
      */
-    class App {
+    class ObRouter {
 
         public static $found = false ;
 
