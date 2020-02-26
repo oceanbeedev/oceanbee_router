@@ -18,7 +18,7 @@ very simple !
 |Static Methods |`ObRouter::get()`            |`ObRouter::post`             | `ObRouter::found()`
 
 ## Example
-
+```php
     <?php 
 	    inclue "oceanbee_router.php" ;
 		
